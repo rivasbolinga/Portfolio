@@ -777,7 +777,8 @@ footer {
     grid-row: 4;
     margin-top: -5px;
     height: 200px;
-    background-image: url("./assets/image-geometry_5.png"),
+    background-image:
+      url("./assets/image-geometry_5.png"),
       url("assets/image-geometry_4.png");
     background-repeat: no-repeat;
     background-position: top left, top right;
@@ -855,7 +856,8 @@ footer {
 
   .form-section {
     background-color: #f9f9fa;
-    background-image: url("./assets/image-geometry_6.png"),
+    background-image:
+      url("./assets/image-geometry_6.png"),
       url("./assets/image-geometry_7.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
