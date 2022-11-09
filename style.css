@@ -490,10 +490,9 @@ footer {
   }
 
   .header-menu ul {
-    display: grid;
-    justify-items: center;
-    column-gap: 30px;
-    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
   }
