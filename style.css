@@ -964,7 +964,13 @@ footer {
     margin: 0;
   }
 
-  .social-media-logos {
+  .logo:hover {
+    transform: scale(1.8);
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.2);
     cursor: pointer;
   }
 }
