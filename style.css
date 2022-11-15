@@ -37,39 +37,40 @@ h5 {
 .hamburger-icon {
   margin-top: 12px;
   cursor: pointer;
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
   display: block;
 }
 
 .intro-container {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin-left: 16px;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .full-name {
   font-family: "Playfair Display", sans-serif;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 400;
   line-height: 100%;
   color: #1a2236;
-  margin-top: 60px;
-  margin-right: 30px;
   font-style: normal;
+  max-width: 350px;
+  padding: 20px 20px 0 25px;
 }
 
 .description {
-  height: 126px;
-  margin-top: 20px;
-  margin-right: 30px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #1a2236;
+  padding-left: 30px;
+  max-width: 350px;
+  width: 70%;
 }
 
 .btn-collaboration {
@@ -80,10 +81,10 @@ h5 {
   border: none;
   cursor: pointer;
   padding: 12px;
-  margin-left: 0;
-  margin-right: 30px;
-  width: 254px;
+  min-width: 288px;
+  max-width: 388px;
   margin-top: 30px;
+  margin-left: 35px;
 }
 
 .btn-collaboration:hover {
@@ -113,19 +114,18 @@ h5 {
 
 .works-container {
   display: grid;
-  margin-top: 40px;
+  margin-top: 50px;
   row-gap: 0;
 }
 
 .text-work-title {
   font-family: "Playfair Display", sans-serif;
-  font-size: 50px;
-  font-weight: 100;
-  line-height: 50px;
+  font-size: 60px;
+  font-weight: 400px;
+  line-height: 100%;
   color: #1a2236;
-  width: 180px;
-  margin-bottom: 30px;
-  margin-left: 16px;
+  margin-bottom: 60px;
+  margin-left: 25px;
   font-style: normal;
 }
 
@@ -227,22 +227,25 @@ h5 {
 }
 
 .about-title {
-  font-size: 50px;
+  font-size: 60px;
   font-family: "Playfair Display", sans-serif;
   color: #1a2236;
-  font-weight: lighter;
+  font-weight: 400px;
   margin-top: 56px;
-  margin-left: 16px;
+  margin-left: 26px;
+  line-height: 100%;
 }
 
 .about-resume {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   color: #1a2236;
-  margin-left: 16px;
+  margin-left: 26px;
   text-align: left;
   font-weight: 400px;
+  width: 70%;
+  margin-top: 20px;
 }
 
 .get-my-cv-btn {
@@ -253,10 +256,10 @@ h5 {
   border: none;
   cursor: pointer;
   padding: 12px;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 340px;
+  min-width: 288px;
+  max-width: 388px;
   margin-top: 30px;
+  margin-left: 35px;
 }
 
 .get-my-cv-icon {
@@ -279,8 +282,24 @@ h5 {
 }
 
 .card {
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
   width: 90%;
   color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.cardSkills {
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  width: 90%;
+  color: black;
   font-family: "Poppins", sans-serif;
 }
 
@@ -288,15 +307,12 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  margin-left: 20px;
   gap: 20px;
+  align-items: center;
 }
 
 .card-title {
-  padding-left: 20px;
-  padding-top: 20px;
   font-size: 20px;
-  font-weight: 600;
   font-weight: 800;
   line-height: 30px;
 }
@@ -308,21 +324,21 @@ h5 {
 }
 
 .languages {
-  background-color: #1c528a;
+  background-color: #163b62;
   background-image: url("./assets/hast.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .frameworks {
-  background-color: #e2505c;
+  background-color: #da1728;
   background-image: url("assets/ic_framework (1).svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .skills {
-  background-color: #febf52;
+  background-color: #d78a04;
   background-image: url("./assets/ic_skills.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -921,7 +937,7 @@ footer {
     font-style: normal;
     font-size: 12px;
     line-height: 18px;
-    color: #7d7c84;
+    color: black;
   }
 
   .btn-submit {
@@ -964,7 +980,13 @@ footer {
     margin: 0;
   }
 
-  .social-media-logos {
+  .logo:hover {
+    transform: scale(1.8);
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.2);
     cursor: pointer;
   }
 }
