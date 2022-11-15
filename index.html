@@ -346,20 +346,21 @@
       <form action="https://formspree.io/f/mvoyvvge" method="POST" >
           <div class="form-fields">
           <div class="name-field">
-          <label class="label">Your name</label>
+          <label for="name" class="label">Your name</label>
             <input
-            name="name" 
+            id="name"
+            name="name"
             type="text" 
             placeholder="Your name" 
             maxlength="30" required>
           </div>
         <div class="email-field">
-          <label class="label">Your email</label>
-          <input name="email" type="email" placeholder="Your email" required>
+          <label for="email" class="label">Your email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required>
         </div>
         <div class="form-message">
-          <label class="label">Message</label>
-          <textarea name="message" type="text" placeholder="Enter your message here..." maxlength="500" required></textarea>
+          <label for="textarea" class="label">Message</label>
+          <textarea id="textarea" name="message" type="text" placeholder="Enter your message here..." maxlength="500" required></textarea>
         </div>
       </div>
         <button class="btn-collaboration btn-submit">Start collaboration</button>
