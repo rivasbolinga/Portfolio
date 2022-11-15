@@ -313,21 +313,21 @@ h5 {
 }
 
 .languages {
-  background-color: #1c528a;
+  background-color: #163b62;
   background-image: url("./assets/hast.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .frameworks {
-  background-color: #e2505c;
+  background-color: #da1728;
   background-image: url("assets/ic_framework (1).svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
 .skills {
-  background-color: #febf52;
+  background-color: #d78a04;
   background-image: url("./assets/ic_skills.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
