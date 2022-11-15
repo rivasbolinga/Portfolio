@@ -292,6 +292,17 @@ h5 {
   font-family: "Poppins", sans-serif;
 }
 
+.cardSkills {
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+  width: 90%;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
