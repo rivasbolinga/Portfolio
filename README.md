@@ -2,8 +2,7 @@
 
 # My-first-Portfolio
 
-> This is my Software Development Portfolio implemented with HTML, CSS and JavaScript.
-> Compatible with phone screen sizes and Desktop screen sizes. 
+> Creating for first time a Software Development portfolio.
 
 > You can find my Portfolio here : https://rivasbolinga.github.io/
 ## Built With
