@@ -4,7 +4,7 @@
 
 > Creating for first time a Software Development portfolio.
 
-> You can find my Portfolio here : https://rivasbolinga.github.io/
+> You can find my Portfolio here : https://rivasbolinga.github.io/Portfolio/
 ## Built With
 
 - HTML
