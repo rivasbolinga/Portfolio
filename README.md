@@ -5,7 +5,7 @@
 > This is my Software Development Portfolio implemented with HTML, CSS and JavaScript.
 > Compatible with phone screen sizes and Desktop screen sizes. 
 
-> You can find my Portfolio here : https://rivasbolinga.github.io/
+> You can find my Portfolio here : https://rivasbolinga.github.io/Portfolio/
 ## Built With
 
 - HTML
