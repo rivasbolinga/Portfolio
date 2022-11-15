@@ -547,13 +547,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-items: right;
+    justify-content: center;
   }
 
   .intro-container {
     display: flex;
     flex-direction: space-between;
     align-items: left;
-    justify-content: start;
+    justify-content: flex-start;
     background-image: url("assets/image_dots.png");
     background-repeat: no-repeat;
     background-position: bottom right;
