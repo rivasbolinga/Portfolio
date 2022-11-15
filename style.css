@@ -15,7 +15,7 @@ h5 {
   display: none;
 }
 
-.desk-background-picture {
+.desk-background-container {
   display: none;
 }
 
@@ -547,6 +547,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-items: right;
+    justify-content: center;
   }
 
   .intro-container {
@@ -557,12 +558,12 @@ footer {
     background-image: url("assets/image_dots.png");
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 27%;
+    background-size: 20%;
   }
 
   .full-name {
     max-width: 400px;
-    font-size: 110px;
+    font-size: 100px;
     line-height: 100%;
   }
 
@@ -572,6 +573,20 @@ footer {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
+  }
+
+  .btn-collaboration {
+    min-width: 220px ;
+  }
+
+  .desk-background-container {
+    display: flex;
+    height: 100%;
+    min-width: 450px;
+    max-width: 700px;
+    background-image: url("assets/image-geometry_1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   /* Works section */
@@ -992,17 +1007,15 @@ footer {
 }
 
 @media only screen and (min-width: 1068px) {
-  .intro-container {
-    align-items: center;
-  }
-
-  .full-name {
-    padding-left: 30px;
-  }
-
+ 
+  
   .description {
-    font-size: 17px;
-    padding-left: 30px;
+    max-width: 400px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+   
   }
 
   .about-me-section {
