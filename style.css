@@ -576,7 +576,7 @@ footer {
   }
 
   .btn-collaboration {
-    min-width: 220px ;
+    min-width: 220px;
   }
 
   .desk-background-container {
@@ -848,6 +848,7 @@ footer {
     font-size: 110px;
     line-height: 100%;
   }
+
   .get-my-cv-btn {
     margin-left: 30px;
     width: 250px;
@@ -1006,8 +1007,6 @@ footer {
 }
 
 @media only screen and (min-width: 1068px) {
- 
-  
   .description {
     max-width: 400px;
     font-weight: 400;
