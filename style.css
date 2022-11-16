@@ -839,16 +839,15 @@ footer {
     flex-direction: column;
   }
 
+  .about-resume {
+    width: 86%;
+  }
+
   .about-title {
     font-weight: 400;
     font-size: 110px;
     line-height: 100%;
   }
-
-  .about-resume {
-    max-width: 70%;
-  }
-
   .get-my-cv-btn {
     margin-left: 30px;
     width: 250px;
@@ -1015,19 +1014,19 @@ footer {
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
-   
-  }
-
-  .about-me-section {
-    column-gap: 80px;
   }
 
   .about-me-info {
     margin-left: 50px;
+    gap: 30px;
   }
 
-  .cards {
-    margin-left: 50px;
+  .about-resume {
+    width: 46%;
+  }
+
+  .card {
+    width: 250px;
   }
 
   .project-section-title {
