@@ -5,6 +5,7 @@
 > Creating for first time a Software Development portfolio.
 
 > You can find my Portfolio here : https://rivasbolinga.github.io/Portfolio/
+> Here a brief description of my Portfolio: https://www.loom.com/share/ca12dda032234a59815bda3781e1d245
 ## Built With
 
 - HTML
