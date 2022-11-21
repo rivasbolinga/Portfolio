@@ -19,8 +19,29 @@
         </nav>
       </div>
     </header>
+ <!-- Menu window mobile starts here-->
 
-  <!-- Desktop nav-->
+ <nav class="mobile-nav hidden">
+  <button class="btn-close">&times;</button>
+   <ul class="link">
+ <li>
+   <a href="#intro-container">Hello</a>
+ </li>
+ <li>
+   <a href="#projects-section">Portfolio</a>
+ </li>
+ <li>
+   <a href="#about-section">About</a>
+ </li>
+ <li>
+   <a href="#form-section">Contact</a>
+ </li>
+   </ul>
+ </nav>
+
+<!-- Menu window mobile starts here-->
+
+  <!-- Desktop nav STARTS HERE-->
 
     <header class="desk-header">
       <nav class="header-menu">
@@ -39,9 +60,8 @@
           </li>
       </nav>
     </header>
-  
-  <!-- END Desktop nav -->
-  
+    <!-- END Desktop nav -->
+
     <!-- Introduction -->
 
     <section class="introduction">
@@ -62,7 +82,6 @@
     <div class="background-intro-pic">
       <img class="background-picture" src="assets/image_geometry_2.png" alt="Picture Mobile Decoration">
     <div class="desk-background-container">
-      <p>j</p>
       </div>
     </div>
     </section>
@@ -70,7 +89,7 @@
 
    <!-- Works section -->
 
-    <section class="works-container">
+    <section class="works-container" id="projects-section">
       <div class="works-title">
         <h2 class="text-work-title">
           Projects
@@ -296,7 +315,7 @@
 
     <!-- About me section -->
 
-    <section class="about-me-section">
+    <section class="about-me-section" id="about-section">
       <div class="about-me-info">
         <h4 class="about-title">About</h4>
         <p class="about-resume">I am a Software engineer with a few years of experience.  I am interested in Full Stack positions, here you can see some of my projects, if you like what you see do not hesitate to contact me. </p>
@@ -340,7 +359,7 @@
 
      <!-- Form section -->
 
-    <section class="form-section">
+    <section class="form-section" id="form-section">
       <div class="form-header">
         <h1 class="form-title">Get started</h1>
         <p class="form-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -410,5 +429,6 @@
         </li>
       </ul>
     </footer>
+  <script src="main.js"></script>
   </body>
 </html>

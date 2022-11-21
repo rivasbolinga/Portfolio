@@ -12,6 +12,11 @@
 - CSS
 - JavaScript
 
+## Getting Started
+To get a local copy of this repository, clone the repository:
+
+ git@github.com:rivasbolinga/Portfolio.git
+
 ## Authors
 
 👤 **Andrea Rivas Palacios**
@@ -19,11 +24,11 @@
 - GitHub: [@rivasbolinga](https://github.com/rivasbolinga)
 - Twitter: [@AndreaRivasPal](https://twitter.com/AndreaRivasPal)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+## 🤝 Contributors:
+-Belay Birhanu Gibina
+-José Fernández-Caminero
+-Carlos Philippe
+-Ayomipo Majekodunmi
 
 ## Show your support
 
