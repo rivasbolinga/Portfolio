@@ -6,3 +6,12 @@ const btnCloseMenu = document.querySelector(".btn-close");
 
 
 //OPEN AND CLOSE MENU WINDOW
+const openMenu = function (e) {
+  windowModal.classList.remove("hidden");
+}
+const closeMenu = function (e) {
+  windowModal.classList.add("hidden");
+}
+btnOpenMenu.addEventListener("click", openMenu);
+btnCloseMenu.addEventListener("click", closeMenu);
+sectionLink.addEventListener("click",closeMenu);
