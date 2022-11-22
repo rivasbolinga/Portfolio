@@ -3,9 +3,15 @@
 const windowModal = document.querySelector('.mobile-nav');
 const btnOpenMenu = document.querySelector('.hamburger-icon');
 const btnCloseMenu = document.querySelector('.btn-close');
+const modalContainer = document.querySelector('.modal-container');
 const sectionLink = document.querySelector('.link');
+const containerProject = document.querySelector('.projects-cards');
+const projectName = document.querySelector('.project-title');
+const projectImage = document.querySelector('.project-image');
+const projectDescription = document.querySelector('.project-description');
 
-// OPEN AND CLOSE MENU WINDOW
+// Open and close MENU window
+
 const openMenu = function () {
   windowModal.classList.remove('hidden');
 };
@@ -17,6 +23,7 @@ btnCloseMenu.addEventListener('click', closeMenu);
 sectionLink.addEventListener('click', closeMenu);
 
 // Create array
+
 const projectInfo = [
   {
     id: 1,
@@ -90,7 +97,19 @@ const projectInfo = [
   },
 ];
 
+// Create modal
+const createModal = (i) => {
+  document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
+    btnOpenMenu.style.display = 'none';
+    modalContainer.style.display = 'flex';
+    projectName.innerText = projectInfo[i].name;
+    projectImage.src = projectInfo[i].image;
+    projectDescription.innerText = projectInfo[i].description;
+  });
+};
+
 // Display projects
+
 
 for (let i = 0; i < projectInfo.length; i++) {
   const projectCard = document.createElement('div');
@@ -111,13 +130,11 @@ for (let i = 0; i < projectInfo.length; i++) {
   containerProject.insertAdjacentHTML('afterbegin', html);
   createModal(i);
 }
-// Create modal
-const createModal = (i) => {
-  document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
-    btnOpenMenu.style.display = 'none';
-    modalContainer.style.display = 'flex';
-    projectName.innerText = projectInfo[i].name;
-    projectImage.src = projectInfo[i].image;
-    projectDescription.innerText = projectInfo[i].description;
-  });
+
+// close modal
+const btnCloseModal = document.querySelector('.close-modal');
+const closeModal = function () {
+  modalContainer.style.display = 'none';
+  btnOpenMenu.style.display = 'block';
 };
+btnCloseModal.addEventListener('click', closeModal);

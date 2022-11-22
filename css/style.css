@@ -148,7 +148,8 @@
   .project-name {
     margin: 0;
     padding: 10px 0 0 10px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 800;
     line-height: 80%;
   }
 
@@ -239,7 +240,7 @@
     background-size: 100%;
   }
 
-  /* Modal POPUP*/
+  /* Modal POPUP */
 
   .modal-container {
     border: 40px solid #1a2236;
@@ -504,15 +505,39 @@
   }
 
   .projects-section {
-    margin: 60px;
+    margin-top: 200px;
   }
 
   .projects-title {
-    font-size: 60px;
-    margin-top: 80px;
+    font-size: 70px;
+    margin-top: 200px;
   }
 
   .projects-cards {
-    grid-template-rows: repeat(15, 70px);
+    grid-template-rows: repeat(15, 87px);
+  }
+
+  .modal-container {
+    transform: translate(0%, -50%) scale(0.7);
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .projects-section {
+    margin: 140px;
+  }
+
+  .modal-container {
+    transform: translate(0%, -50%) scale(0.6);
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .projects-section {
+    margin: 200px;
+  }
+
+  .modal-container {
+    transform: translate(0%, -50%) scale(0.6);
   }
 }
