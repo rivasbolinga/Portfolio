@@ -111,3 +111,13 @@ for (let i = 0; i < projectInfo.length; i++) {
   containerProject.insertAdjacentHTML('afterbegin', html);
   createModal(i);
 }
+// Create modal
+const createModal = (i) => {
+  document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
+    btnOpenMenu.style.display = 'none';
+    modalContainer.style.display = 'flex';
+    projectName.innerText = projectInfo[i].name;
+    projectImage.src = projectInfo[i].image;
+    projectDescription.innerText = projectInfo[i].description;
+  });
+};
