@@ -15,3 +15,5 @@ const closeMenu = function () {
 btnOpenMenu.addEventListener('click', openMenu);
 btnCloseMenu.addEventListener('click', closeMenu);
 sectionLink.addEventListener('click', closeMenu);
+
+//

@@ -111,6 +111,7 @@
   }
 
   /* Works section */
+
   .projects-section {
     margin-top: 200px;
     display: flex;
@@ -238,7 +239,7 @@
     background-size: 100%;
   }
 
-  /* Modal */
+  /* Modal POPUP*/
 
   .modal-container {
     border: 40px solid #1a2236;
@@ -477,6 +478,8 @@
     cursor: pointer;
   }
 }
+
+/* Screensize bigger 1068px */
 
 @media only screen and (min-width: 1068px) {
   .description {
