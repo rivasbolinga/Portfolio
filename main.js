@@ -89,3 +89,25 @@ const projectInfo = [
     source: '#',
   },
 ];
+
+// Display projects
+
+for (let i = 0; i < projectInfo.length; i++) {
+  const projectCard = document.createElement('div');
+  projectCard.className = `project-card-${projectInfo[i].id}`;
+  const html = `
+    <div class="project-wrapper-${projectInfo[i].id}">
+    <img id=project-pic class="pict project-picture-${projectInfo[i].id}" src = ${projectInfo[i].image} alt=${projectInfo[i].name}>
+    <div class="project-card-details-${projectInfo[i].id}" id=project-card-details>
+      <h4 class="project-name">${projectInfo[i].name}</h4>
+      <ul class="card-tech">
+      <li>${projectInfo[i].technologies[0]}</li>
+       <li>${projectInfo[i].technologies[1]}</li>
+       <li>${projectInfo[i].technologies[2]}</li>
+      </ul>
+      <button class="btn-see-project" id="${projectInfo[i].id}">See this project &#10132</button>
+    </div>
+    </div>`;
+  containerProject.insertAdjacentHTML('afterbegin', html);
+  createModal(i);
+}
