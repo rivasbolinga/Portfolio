@@ -98,7 +98,7 @@ const projectInfo = [
 ];
 
 // Create modal
-const createModal = (i) => {
+const displayModal = (i) => {
   document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
     btnOpenMenu.style.display = 'none';
     modalContainer.style.display = 'flex';
@@ -109,9 +109,7 @@ const createModal = (i) => {
 };
 
 // Display projects
-
-
-for (let i = 0; i < projectInfo.length; i++) {
+projectInfo.forEach((e, i) => {
   const projectCard = document.createElement('div');
   projectCard.className = `project-card-${projectInfo[i].id}`;
   const html = `
@@ -128,8 +126,8 @@ for (let i = 0; i < projectInfo.length; i++) {
     </div>
     </div>`;
   containerProject.insertAdjacentHTML('afterbegin', html);
-  createModal(i);
-}
+  displayModal(i);
+});
 
 // close modal
 const btnCloseModal = document.querySelector('.close-modal');

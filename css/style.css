@@ -121,7 +121,7 @@
     margin-top: 100px 20px 20px 20px;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(15, 50px);
+    grid-template-rows: repeat(15, 65px);
     box-sizing: border-box;
     background-image: url('../assets/image_dots.png');
     background-repeat: no-repeat;
@@ -514,7 +514,7 @@
   }
 
   .projects-cards {
-    grid-template-rows: repeat(15, 87px);
+    grid-template-rows: repeat(15, 90px);
   }
 
   .modal-container {
