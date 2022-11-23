@@ -70,6 +70,9 @@ After you're finished please remove all the comments and instructions!
 > Javascript
 > CSS
 >HTML
+https://www.w3.org/html/ 
+https://www.w3schools.com/css/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
 <!-->
 <details>
   <summary>Client</summary>
