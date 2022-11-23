@@ -466,6 +466,12 @@
     margin-bottom: 153px;
   }
 
+  .error-message {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: -20px;
+  }
+
   /* Footer */
 
   footer {
