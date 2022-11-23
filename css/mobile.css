@@ -523,11 +523,12 @@ h5 {
 .form-message {
   padding: 0 24px 8px 24px;
 }
+
 .error-message {
+  display: none;
   color: #ad1e2a;
   padding: 0;
   margin: 0;
-  
 }
 
 input,
