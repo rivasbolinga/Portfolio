@@ -241,6 +241,7 @@ h5 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 /* Pop-up MOBILE STARTS HERE */
@@ -257,6 +258,9 @@ h5 {
   top: 50%;
   transform: translate(0%, -50%) scale(0.9);
   visibility: visible;
+  width: 100%;
+  min-height: 1200px;
+  overflow-x: scroll;
 }
 
 .close-modal {
@@ -275,13 +279,14 @@ h5 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 60px;
   line-height: 80%;
 }
 
 .card-tech-modal {
   display: flex;
   gap: 5px;
+  font-size: 20px;
 }
 
 .project-image {
