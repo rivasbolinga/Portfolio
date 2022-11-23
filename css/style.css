@@ -276,12 +276,12 @@
     align-self: center;
   }
 
-  .card-tech-modal li{
+  .card-tech-modal li {
     font-weight: 300;
     font-size: 20px;
     line-height: 80%;
     margin-left: 20px;
-    gap:10px;
+    gap: 10px;
     padding: 10px 15px 10px 15px;
   }
 
