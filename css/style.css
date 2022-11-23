@@ -250,27 +250,43 @@
     background-color: white;
     position: fixed;
     top: 50%;
-    transform: translate(0%, -50%) scale(0.73);
+    transform: translate(0%, -50%);
     visibility: visible;
+    box-sizing: border-box;
+    max-height: 100%;
   }
 
   .project-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 60px;
     line-height: 80%;
+    margin-left: 20px;
   }
 
   .project-description {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 27px;
     color: #1a2236;
     padding-left: 120px;
     padding-right: 120px;
+    width: 700px;
+    align-self: center;
+  }
+
+  .card-tech-modal li{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    margin-left: 20px;
+    gap:10px;
+    padding: 10px 15px 10px 15px;
   }
 
   .btns-modal {
+    font-size: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -278,15 +294,25 @@
   }
 
   .btn-modal {
-    margin-right: 10px;
+    margin-top: 100px;
+    margin-right: 20px;
     cursor: pointer;
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  .btn-modal:hover {
+    background-color: #1a2236;
+    color: white;
   }
 
   .next-prev-proj {
+    margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 200px;
+    gap: 220px;
   }
 
   .prev-btn {
@@ -518,7 +544,7 @@
   }
 
   .modal-container {
-    transform: translate(0%, -50%) scale(0.7);
+    max-width: 100%;
   }
 }
 
@@ -526,18 +552,10 @@
   .projects-section {
     margin: 140px;
   }
-
-  .modal-container {
-    transform: translate(0%, -50%) scale(0.6);
-  }
 }
 
 @media only screen and (min-width: 1700px) {
   .projects-section {
     margin: 200px;
-  }
-
-  .modal-container {
-    transform: translate(0%, -50%) scale(0.6);
   }
 }

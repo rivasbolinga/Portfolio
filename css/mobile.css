@@ -256,10 +256,10 @@ h5 {
   background-color: white;
   position: fixed;
   top: 50%;
-  transform: translate(0%, -50%) scale(0.9);
+  transform: translate(0%, -50%);
   visibility: visible;
   width: 100%;
-  min-height: 1200px;
+  max-height: 100%;
   overflow-x: scroll;
 }
 
@@ -274,20 +274,21 @@ h5 {
 }
 
 .project-title {
-  padding-left: 40px;
+  padding-left: 20px;
   color: #1a2236;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 20px;
   line-height: 80%;
 }
 
 .card-tech-modal {
   display: flex;
   gap: 5px;
-  font-size: 20px;
+  padding: 0 0 0 20px;
 }
+
 
 .project-image {
   align-self: center;
@@ -295,7 +296,7 @@ h5 {
 }
 
 .card-tech-modal li {
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   list-style: none;
   color: #1a2236;
   border: 1px solid #1a2236;
@@ -326,7 +327,7 @@ h5 {
   background: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 300px;
+  width: 250px;
   height: 51px;
   border: 1px solid #1a2236;
   font-family: 'Poppins', sans-serif;
@@ -336,6 +337,7 @@ h5 {
   line-height: 27px;
   text-align: center;
   color: #1a2236;
+  margin-bottom: 30px;
 }
 
 .iconModal {
