@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="https://github.com/microverseinc/readme-template/raw/master/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
@@ -70,10 +70,9 @@ After you're finished please remove all the comments and instructions!
 > Javascript
 > CSS
 >HTML
-https://www.w3.org/html/ 
-https://www.w3schools.com/css/
-https://developer.mozilla.org/en-US/docs/Web/JavaScript
-<!-->
+<a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="55"/></a><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="55"/></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
+
+<!--
 <details>
   <summary>Client</summary>
   <ul>
@@ -120,7 +119,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -208,8 +206,14 @@ Example:
 
 
 👤 **Belay Birhanu Gibina**
+
+
 👤 **José Fernández-Caminero**
+
+
 👤 **Carlos Philippe**
+
+
 👤 **Ayomipo Majekodunmi**
 
 
