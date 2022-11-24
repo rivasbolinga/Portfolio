@@ -153,7 +153,7 @@ form.addEventListener('submit', (e) => {
 
 // local storage
 
-let localData= {
+let localData = {
   name: '',
   email: '',
   message: '',
@@ -162,7 +162,6 @@ let localData= {
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const messageInput = document.getElementById('textarea');
-
 
 function dataLocalStore() {
   localStorage.setItem('name', JSON.stringify(localData));
@@ -179,5 +178,5 @@ if (JSON.parse(localStorage.getItem('name')) !== null) {
   localData = JSON.parse(localStorage.getItem('name'));
   nameInput.setAttribute('value', localData.name);
   emailInput.setAttribute('value', localData.email);
-  messageInput.value = localData.text;
+  messageInput.value = localData.message;
 }
