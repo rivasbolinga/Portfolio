@@ -152,16 +152,32 @@ form.addEventListener('submit', (e) => {
 });
 
 // local storage
+
+let localData= {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('textarea');
+
+
+function dataLocalStore() {
+  localStorage.setItem('name', JSON.stringify(localData));
+}
+
 form.addEventListener('change', () => {
-  storedData.name = nameInput.value;
-  storedData.email = emailInput.value;
-  storedData.text = messageInput.value;
-  dataStore();
+  localData.name = nameInput.value;
+  localData.email = emailInput.value;
+  localData.message = messageInput.value;
+  dataLocalStore();
 });
 
 if (JSON.parse(localStorage.getItem('name')) !== null) {
-  storedData = JSON.parse(localStorage.getItem('name'));
-  nameInput.setAttribute('value', storedData.name);
-  emailInput.setAttribute('value', storedData.email);
-  messageInput.value = storedData.text;
+  localData = JSON.parse(localStorage.getItem('name'));
+  nameInput.setAttribute('value', localData.name);
+  emailInput.setAttribute('value', localData.email);
+  messageInput.value = localData.text;
 }
