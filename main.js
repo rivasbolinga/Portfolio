@@ -150,3 +150,18 @@ form.addEventListener('submit', (e) => {
     errorMessage.style.display = 'block';
   }
 });
+
+// local storage
+form.addEventListener('change', () => {
+  storedData.name = nameInput.value;
+  storedData.email = emailInput.value;
+  storedData.text = messageInput.value;
+  dataStore();
+});
+
+if (JSON.parse(localStorage.getItem('name')) !== null) {
+  storedData = JSON.parse(localStorage.getItem('name'));
+  nameInput.setAttribute('value', storedData.name);
+  emailInput.setAttribute('value', storedData.email);
+  messageInput.value = storedData.text;
+}
