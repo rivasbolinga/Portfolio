@@ -207,16 +207,19 @@ Example:
 
 👤 **Belay Birhanu Gibina**
 
+- GitHub: [@belaymit](https://github.com/belaymit)
 
 👤 **José Fernández-Caminero**
 
+- GitHub: [@fdezcaminero](https://github.com/fdezcaminero)
 
 👤 **Carlos Philippe**
 
+- GitHub: [@Carl2678](https://github.com/Carl2678)
 
 👤 **Ayomipo Majekodunmi**
 
-
+- GitHub: [@AyomipoMajek](https://github.com/AyomipoMajek)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

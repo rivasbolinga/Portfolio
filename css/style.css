@@ -529,7 +529,11 @@
   }
 
   .about-resume {
-    width: 46%;
+    width: 66%;
+  }
+
+  .cards {
+    margin-left: 100px;
   }
 
   .card {
@@ -557,6 +561,13 @@
 @media only screen and (min-width: 1300px) {
   .projects-section {
     margin: 140px;
+  }
+  .about-resume {
+    width: 60%;
+  }
+
+  .cards {
+    margin-left: 130px;
   }
 }
 
