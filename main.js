@@ -9,6 +9,7 @@ const containerProject = document.querySelector('.projects-cards');
 const projectName = document.querySelector('.project-title');
 const projectImage = document.querySelector('.project-image');
 const projectDescription = document.querySelector('.project-description');
+const technoTags = document.querySelector('.card-tech-modal');
 
 // Open and close MENU window
 
@@ -105,6 +106,10 @@ const displayModal = (i) => {
     projectName.innerText = projectInfo[i].name;
     projectImage.src = projectInfo[i].image;
     projectDescription.innerText = projectInfo[i].description;
+    technoTags.innerHTML = `
+    <li>${projectInfo[i].technologies[0]}</li>
+    <li>${projectInfo[i].technologies[1]}</li>
+    <li>${projectInfo[i].technologies[2]}</li>`;
   });
 };
 
