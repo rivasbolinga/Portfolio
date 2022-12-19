@@ -142,7 +142,8 @@ const closeModal = function () {
 };
 btnCloseModal.addEventListener('click', closeModal);
 
-//navbar
+/////Navbar 
+
 const navContainer = document.querySelector('.nav-links');
 const navLink = document.querySelector('.navbar-link');
 
@@ -152,7 +153,46 @@ navContainer.addEventListener('click', function (e){
     const id = e.target.getAttribute('href');
    document.querySelector(id).scrollIntoView({behavior: "smooth"})
   }
-})
+});
+
+// fade over Navbar
+
+const nav = document.querySelector('.header-menu');
+
+const hoverNav = function (e){
+  if(e.target.classList.contains('nav-link')){
+    const link = e.target;
+    const siblings = link.closest('.header-menu').querySelectorAll('.nav-link');
+
+    siblings.forEach(el => {
+      if(el !== link) {
+        el.style.opacity = this;
+      }
+    })
+  }
+}
+
+nav.addEventListener('mouseover',hoverNav.bind(0.5));
+nav.addEventListener('mouseout', hoverNav.bind(1));
+
+//sticky header
+const navv = document.querySelector('.desk-header'); 
+const navHeight = nav.getBoundingClientRect().height;
+const header = document.querySelector('.introduction');
+
+const stickyNav = function(entries){
+  const [entry] = entries;
+  if(!entry.isIntersecting) navv.classList.add('sticky')
+  else navv.classList.remove('sticky')
+}
+
+const headerObserver = new IntersectionObserver ( stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`
+});
+
+headerObserver.observe(header);
 
 // form validation
 

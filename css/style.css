@@ -15,19 +15,18 @@
   .desk-header {
     width: 100%;
     display: flex;
-    position: fixed;
     background-color: white;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #dddfe6;
     background-image: none;
-    min-height: 50px;
+    height: 150px;
   }
 
   .header-menu ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     list-style: none;
   }
 
@@ -36,9 +35,13 @@
     font-style: normal;
     text-decoration: none;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     color: #1a2236;
+  }
+
+  .sticky {
+    position: fixed;
   }
 
   /* Transition nav */
@@ -63,7 +66,6 @@
 
   .introduction {
     background-image: none;
-    height: 550px;
     display: flex;
     flex-direction: row;
     justify-items: right;
@@ -82,15 +84,15 @@
   }
 
   .full-name {
-    max-width: 400px;
-    font-size: 100px;
+    max-width: 500px;
+    font-size: 120px;
     line-height: 100%;
   }
 
   .description {
     max-width: 400px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     letter-spacing: -0.01em;
   }
@@ -100,10 +102,9 @@
   }
 
   .desk-background-container {
-    margin-top: 55px;
     display: flex;
-    height: 100%;
-    min-width: 450px;
+    height: 140%;
+    min-width: 650px;
     max-width: 700px;
     background-image: url("../assets/image-geometry_1.png");
     background-repeat: no-repeat;
@@ -113,8 +114,7 @@
   /* Works section */
 
   .projects-section {
-    margin-top: 200px;
-    display: flex;
+    padding-top: 200px;
   }
 
   .projects-cards {
@@ -125,7 +125,7 @@
     box-sizing: border-box;
     background-image: url('../assets/image_dots.png');
     background-repeat: no-repeat;
-    background-position: 200px 20px;
+    background-position: 200px 90px;
     background-size: 10%;
   }
 
@@ -172,10 +172,7 @@
     font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: 400;
-    transform: rotate(-90deg);
-    font-size: 60px;
-    margin-top: 180px;
-    position: absolute;
+    font-size: 80px;
   }
 
   .project-wrapper-1 {
@@ -545,8 +542,7 @@
   }
 
   .projects-title {
-    font-size: 70px;
-    margin-top: 200px;
+    font-size: 100px;
   }
 
   .projects-cards {
