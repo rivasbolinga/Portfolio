@@ -1,35 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-
-  <img src="https://github.com/microverseinc/readme-template/raw/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -141,10 +111,10 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-
- 1.Clone this repository to your desired folder:
- 2.run: git clone git@github.com:rivasbolinga/Portfolio.git
- 2.Open the file in your code editor
+<br/>
+ 1.Clone this repository to your desired folder:<br/>
+ 2.run: git clone git@github.com:rivasbolinga/Portfolio.git<br/>
+ 2.Open the file in your code editor<br/>
 <!--
 Example commands:
 
@@ -227,7 +197,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Cooming soon;
+
 
 - [ ] **[Smooth scroll down]**
 - [ ] **[More JS implementations]**
@@ -235,23 +205,11 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+Thank you for visiting my profile, if you like this project, you can show your support by giving me a nice :star:️ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,25 +217,11 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank to my coding partnes for all the help and support: -Belay Birhanu Gibina -José Fernández-Caminero -Carlos Philippe -Ayomipo Majekodunmi
+I would like to thanks to my coding partners for helping me in the development of this project:<br/> <br/>-Belay Birhanu Gibina<br/> -José Fernández-Caminero <br/> -Carlos Philippe
+<br/> -Ayomipo Majekodunmi
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional)
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
