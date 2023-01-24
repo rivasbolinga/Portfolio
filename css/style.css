@@ -114,19 +114,17 @@
 
   .projects-section {
     margin-top: 200px;
-    display: flex;
+    background-image: url('../assets/background-projects.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1000px;
   }
-
   .projects-cards {
-    margin-top: 100px 20px 20px 20px;
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(15, 65px);
     box-sizing: border-box;
-    background-image: url('../assets/image_dots.png');
-    background-repeat: no-repeat;
-    background-position: 200px 20px;
-    background-size: 10%;
   }
 
   #project-card-details {
@@ -167,78 +165,56 @@
     color: #1a2236;
   }
 
-  .projects-title {
-    color: #1a2236;
-    font-family: "Playfair Display", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    transform: rotate(-90deg);
-    font-size: 60px;
-    margin-top: 180px;
-    position: absolute;
-  }
 
-  .project-wrapper-1 {
+  .project-wrapper-0 {
     grid-column: 5/12;
     grid-row: 1/5;
   }
+  .project-picture-0 {
+    height: 98%;
+  }
+
+  .project-wrapper-1 {
+    grid-column: 1/5;
+    grid-row: 5/9;
+  }
+
+  .project-picture-1 {
+    width: 150px;
+    margin-top: 30px;
+  }
 
   .project-wrapper-2 {
-    grid-column: 1/5;
-    grid-row: 6/9;
+    grid-column: 1/7;
+    grid-row: 8/12;
+  }
+
+  .project-picture-2 {
+   height: 95%;
+    margin-top: 28px;
+    width: 105%;
   }
 
   .project-wrapper-3 {
-    grid-column: 1/7;
-    grid-row: 9/13;
+    grid-column: 7/11;
+    grid-row: 12/15;
   }
+  .project-picture-3 {
+     margin-top: 14px;
+     
+   }
+ 
 
   .project-wrapper-4 {
-    grid-column: 7/11;
-    grid-row: 13/16;
-  }
-
-  .project-wrapper-5 {
     grid-column: 8/12;
     grid-row: 7/10;
   }
 
-  .project-wrapper-6 {
+  .project-wrapper-5 {
     grid-column: 8/12;
     grid-row: 5/7;
   }
 
-  #project-pic {
-    width: 100%;
-    height: 100%;
-  }
-
-  .container-1 {
-    grid-column: 5/8;
-    grid-row: 5/9;
-    background-image: url('../assets/image-geometry_2.png');
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 100%;
-  }
-
-  .container-2 {
-    grid-column: 1/7;
-    grid-row: 13/15;
-    background-image: url('../assets/image-geometry_5.png'), url('../assets/image-geometry_4.png');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, top right;
-    background-size: 30%, 20%;
-  }
-
-  .container-3 {
-    grid-column: 7/12;
-    grid-row: 9/13;
-    background-image: url('../assets/image-geometry_3.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-  }
 
   /* Modal POPUP */
 
@@ -514,7 +490,7 @@
 
 /* Screensize bigger 1068px */
 
-@media only screen and (min-width: 1068px) {
+@media only screen and (min-width: 1024px) {
   .description {
     max-width: 400px;
     font-weight: 400;
@@ -539,30 +515,21 @@
   .card {
     width: 250px;
   }
-
   .projects-section {
-    margin-top: 200px;
+    margin: 100px;
   }
-
-  .projects-title {
-    font-size: 70px;
-    margin-top: 200px;
-  }
-
-  .projects-cards {
-    grid-template-rows: repeat(15, 90px);
-  }
+ 
 
   .modal-container {
     max-width: 100%;
   }
 }
 
-@media only screen and (min-width: 1300px) {
-  .projects-section {
-    margin: 140px;
-  }
+@media only screen and (min-width: 1000px) {
 
+  .projects-section {
+    margin: 100px;
+  }
   .about-resume {
     width: 60%;
   }
@@ -573,7 +540,5 @@
 }
 
 @media only screen and (min-width: 1700px) {
-  .projects-section {
-    margin: 200px;
-  }
+  
 }
