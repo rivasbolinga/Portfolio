@@ -227,7 +227,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Cooming soon;
 
 - [ ] **[Smooth scroll down]**
 - [ ] **[More JS implementations]**
@@ -249,9 +248,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project give it a star 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,25 +256,10 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank to my coding partnes for all the help and support: -Belay Birhanu Gibina -José Fernández-Caminero -Carlos Philippe -Ayomipo Majekodunmi
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+I would like to thank to my coding partnes for all the help and support: ** Belay Birhanu Gibina ** -José Fernández-Caminero -Carlos Philippe -Ayomipo Majekodunmi
 
-<!-- FAQ (optional)
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
