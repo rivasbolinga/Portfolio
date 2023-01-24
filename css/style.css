@@ -117,7 +117,7 @@
     background-image: url('../assets/background-projects.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 1000px;
+   
   }
   .projects-cards {
     margin: 0;
@@ -201,7 +201,6 @@
   }
   .project-picture-3 {
      margin-top: 14px;
-     
    }
  
 
@@ -526,19 +525,58 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .desk-header {
+    height: 100px;
+  }
 
+  .intro-container {
+    margin-top: 100px;
+  }
+  
   .projects-section {
-    margin: 100px;
+    margin-top: 400px;
   }
   .about-resume {
     width: 60%;
   }
 
+  .project-wrapper-2 {
+    grid-column: 1/7;
+    grid-row: 9/13;
+  }
+
+  .project-picture-2 {
+   height: 104%;
+    width: 105%;
+    margin: 0;
+  }
+
+  .desk-background-container {
+    margin-top: 100px;
+    width: 600px;
+    height: 1100px;
+  }
+
   .cards {
     margin-left: 130px;
   }
-}
 
-@media only screen and (min-width: 1700px) {
-  
+  .project-wrapper-3 {
+    grid-column: 7/11;
+    grid-row: 13/15;
+  }
+  .project-picture-3 {
+     margin-top: 0;
+   }
+
+
+@media only screen and (min-width: 1440px) {
+  .projects-cards {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(15, 98px);
+    box-sizing: border-box;
+  }
+}
 }
