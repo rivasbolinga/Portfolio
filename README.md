@@ -1,35 +1,6 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-
-  <img src="https://github.com/microverseinc/readme-template/raw/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
+<img width="1440" alt="Screenshot 2023-01-24 at 16 46 30" src="https://user-images.githubusercontent.com/103900838/214340506-72e28972-0b69-4d77-83a8-3c84f217c52d.png">
 
 <!-- TABLE OF CONTENTS -->
 
@@ -141,10 +112,10 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-
- 1.Clone this repository to your desired folder:
- 2.run: git clone git@github.com:rivasbolinga/Portfolio.git
- 2.Open the file in your code editor
+<br/>
+ 1.Clone this repository to your desired folder:<br/>
+ 2.run: git clone git@github.com:rivasbolinga/Portfolio.git<br/>
+ 2.Open the file in your code editor<br/>
 <!--
 Example commands:
 
@@ -227,20 +198,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
 - [ ] **[Smooth scroll down]**
 - [ ] **[More JS implementations]**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,7 +208,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give it a star 
+
+Thank you for visiting my profile, if you like this project, you can show your support by giving me a nice :star:️ 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,7 +220,9 @@ If you like this project give it a star
 
 
 
-I would like to thank to my coding partnes for all the help and support: ** Belay Birhanu Gibina ** -José Fernández-Caminero -Carlos Philippe -Ayomipo Majekodunmi
+I would like to thanks to my coding partners for helping me in the development of this project:<br/> <br/>-Belay Birhanu Gibina<br/> -José Fernández-Caminero <br/> -Carlos Philippe
+<br/> -Ayomipo Majekodunmi
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -267,8 +231,6 @@ I would like to thank to my coding partnes for all the help and support: ** Bela
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/rivasbolinga/Portfolio/blob/main/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
