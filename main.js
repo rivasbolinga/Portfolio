@@ -27,122 +27,148 @@ sectionLink.addEventListener('click', closeMenu);
 
 const projectInfo = [
   {
+    id: 0,
+    name: 'Library - Book List',
+    description: "Library - Book List is a small library app where you can record, delete and mark as read a list of books that you have read or you want to read. The project is part of The Odin Project's curriculum.",
+    image: '../assets/mylibrary.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+    ],
+    liveVersion: 'https://rivasbolinga.github.io/Library/',
+    source: 'https://github.com/rivasbolinga/Library',
+  },
+  {
     id: 1,
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: './assets/P1.png',
+    name: 'To Do List',
+    description: 'To Do List is a simple application where you can list, remove, edit and mark as complete all the tasks that you have to do.',
+    image: './assets/todo.png',
     technologies: [
       'HTML/CSS',
-      'Ruby on Rails',
-      'Javascript',
-    ],
-    liveVersion: '#',
-    source: '#',
+      'Webpack',
+      'JavaScript'],
+    liveVersion: 'https://rivasbolinga.github.io/ToDoList/dist/',
+    source: 'https://github.com/rivasbolinga/ToDoList',
   },
   {
     id: 2,
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: './assets/P2.png',
+    name: 'Home for all',
+    description: 'Capstone project from Microverse curriculum first module: html, css and JavaScript. It is a dinamic website for an animal rigths conference.',
+    image: './assets/homeforall.png',
     technologies: [
-      'HTML/CSS',
-      'Ruby on Rails',
-      'Javascript'],
-    liveVersion: '#',
-    source: '#',
+      'HTML',
+      'CSS',
+      'JavaScript'],
+    liveVersion: 'https://rivasbolinga.github.io/Home-For-All/',
+    source: 'https://github.com/rivasbolinga/Home-For-All',
   },
   {
     id: 3,
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: './assets/P3.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'Javascript'],
-    liveVersion: '#',
-    source: '#',
+    name: 'Rock Paper Scissors',
+    description: 'Simple implementation of Rock Paper Scissors game where you can play in the browser against an AI, This project is from The Odin Project curriculum.',
+    image: './assets/rps.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript'],
+    liveVersion: 'https://rivasbolinga.github.io/RockPaperScissors/',
+    source: 'https://github.com/rivasbolinga/RockPaperScissors',
   },
   {
     id: 4,
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: './assets/P4.png',
+    name: 'Tic Tac Toe',
+    description: 'The classic game of Tic Tac Toe where you can play on the browser with an oponent.',
+    image: './assets/tictactoe.png',
     technologies: [
-      'HTML/CSS',
-      'Ruby on Rails',
-      'Javascript'],
-    liveVersion: '#',
-    source: '#',
+      'HTML',
+      'CSS',
+      'JavaScript'],
+    liveVersion: 'https://rivasbolinga.github.io/Tic-Tac-Toe/',
+    source: 'https://github.com/rivasbolinga/Tic-Tac-Toe',
   },
   {
     id: 5,
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: './assets/P5.png',
+    name: 'Calculadora',
+    description: 'Project of a simple calculator from The Odin Project Curriculum using the material I have learned in "fundamentas of Javascript Course". Use of simple functions for the functionality of the calculator.',
+    image: './assets/Calculadora.png',
     technologies: [
-      'HTML/CSS',
-      'Ruby on Rails',
-      'Javascript'],
-    liveVersion: '#',
-    source: '#',
-  },
-  {
-    id: 6,
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis. Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    image: './assets/P6.png',
-    technologies: [
-      'HTML/CSS',
-      'Ruby on Rails',
-      'Javascript'],
-    liveVersion: '#',
-    source: '#',
+      'HTML',
+      'CSS',
+      'JavaScript'],
+    liveVersion: 'https://rivasbolinga.github.io/Calculadora/',
+    source: 'https://github.com/rivasbolinga/Calculadora',
   },
 ];
 
-// Create modal
-const displayModal = (i) => {
-  document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
-    btnOpenMenu.style.display = 'none';
-    modalContainer.style.display = 'flex';
-    projectName.innerText = projectInfo[i].name;
-    projectImage.src = projectInfo[i].image;
-    projectDescription.innerText = projectInfo[i].description;
-    technoTags.innerHTML = `
-    <li>${projectInfo[i].technologies[0]}</li>
-    <li>${projectInfo[i].technologies[1]}</li>
-    <li>${projectInfo[i].technologies[2]}</li>`;
-  });
+// // Create modal
+const displayModal = (id) => {
+  projectInfo.forEach((work,i)=> {
+    if((Number(id)) === work.id) {
+  modalContainer.style.display = 'flex';
+  // document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
+    let html = "";
+    html += `
+    <button class="close-modal">&times</button>
+    <h3 class="project-title">${projectInfo[id].name}</h3>
+    <ul class="card-tech-modal">
+      <li>${projectInfo[id].technologies[0]}</li>
+      <li>${projectInfo[id].technologies[1]}</li>
+      <li>${projectInfo[id].technologies[2]}</li>
+    </ul>
+    <img class="project-image" src="${projectInfo[id].image}">
+    <p class="project-description">${projectInfo[id].description}</p>
+    <div class="btns-modal">
+    <button class="btn-modal seeLive"><a href="${projectInfo[id].liveVersion}">See live</a></button>
+    <button class="btn-modal seeSource"><a href="${projectInfo[id].source}">See source</a></button>
+    </div>
+    <div class="next-prev-proj">
+        <button class="prev-btn">	&larr; Previous project</button>
+        <button class="prev-btn">Next Project 	&rarr;</button>
+      </div>`
+      
+    modalContainer.innerHTML = html;
+    }
+})
+// close modal
+const btnCloseModal = document.querySelector('.close-modal');
+
+btnCloseModal.addEventListener('click', (e) => {
+  e.preventDefault()
+modalContainer.style.display = 'none';
+})
 };
 
 // Display projects
-projectInfo.forEach((e, i) => {
+projectInfo.forEach((work) => {
   const projectCard = document.createElement('div');
-  projectCard.className = `project-card-${projectInfo[i].id}`;
+  projectCard.className = `project-card-${work.id}`;
   const html = `
-    <div class="project-wrapper-${projectInfo[i].id}">
-    <img id=project-pic class="pict project-picture-${projectInfo[i].id}" src = ${projectInfo[i].image} alt=${projectInfo[i].name}>
-    <div class="project-card-details-${projectInfo[i].id}" id=project-card-details>
-      <h4 class="project-name">${projectInfo[i].name}</h4>
+    <div class="project-wrapper-${work.id}">
+    <img id=project-pic class="pict project-picture-${work.id}" src = ${work.image} alt=${work.name}>
+    <div class="project-card-details-${work.id}" id=project-card-details>
+      <h4 class="project-name">${work.name}</h4>
       <ul class="card-tech">
-      <li>${projectInfo[i].technologies[0]}</li>
-       <li>${projectInfo[i].technologies[1]}</li>
-       <li>${projectInfo[i].technologies[2]}</li>
+      <li>${work.technologies[0]}</li>
+       <li>${work.technologies[1]}</li>
+       <li>${work.technologies[2]}</li>
       </ul>
-      <button class="btn-see-project" id="${projectInfo[i].id}">See this project &#10132</button>
+      <button class="btn-see-project" id="${work.id}">See this project &#10132</button>
     </div>
     </div>`;
   containerProject.insertAdjacentHTML('afterbegin', html);
-  displayModal(i);
 });
 
-// close modal
-const btnCloseModal = document.querySelector('.close-modal');
-const closeModal = function () {
-  modalContainer.style.display = 'none';
-  btnOpenMenu.style.display = 'block';
-};
-btnCloseModal.addEventListener('click', closeModal);
 
-// form validation
+const btnSee = document.querySelectorAll('.btn-see-project');
+btnSee.forEach((btn) => btn.addEventListener('click', (e)=> {
+  const {id} = e.target;
+  console.log(id);
+  displayModal(id);
+}));
+
+
+// --Form validation
 
 const errorMessage = document.querySelector('.error-message');
 const form = document.getElementById('form-section');
@@ -156,7 +182,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// local storage
+//-- Local Storage
 
 let localData = {
   name: '',
