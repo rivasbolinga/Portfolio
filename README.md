@@ -198,8 +198,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-
 - [ ] **[Smooth scroll down]**
 - [ ] **[More JS implementations]**
 
@@ -210,13 +208,16 @@ Example:
 
 ## ⭐️ Show your support <a name="support"></a>
 
+
 Thank you for visiting my profile, if you like this project, you can show your support by giving me a nice :star:️ 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
 
 
 I would like to thanks to my coding partners for helping me in the development of this project:<br/> <br/>-Belay Birhanu Gibina<br/> -José Fernández-Caminero <br/> -Carlos Philippe
