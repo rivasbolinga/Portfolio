@@ -6,10 +6,6 @@ const btnCloseMenu = document.querySelector('.btn-close');
 const modalContainer = document.querySelector('.modal-container');
 const sectionLink = document.querySelector('.link');
 const containerProject = document.querySelector('.projects-cards');
-const projectName = document.querySelector('.project-title');
-const projectImage = document.querySelector('.project-image');
-const projectDescription = document.querySelector('.project-description');
-const technoTags = document.querySelector('.card-tech-modal');
 
 // Open and close MENU window
 
@@ -101,14 +97,14 @@ const projectInfo = [
   },
 ];
 
-// // Create modal
+//  Create modal
 const displayModal = (id) => {
-  projectInfo.forEach((work,i)=> {
-    if((Number(id)) === work.id) {
-  modalContainer.style.display = 'flex';
-  // document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
-    let html = "";
-    html += `
+  projectInfo.forEach((work) => {
+    if ((Number(id)) === work.id) {
+      modalContainer.style.display = 'flex';
+      // document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
+      let html = '';
+      html += `
     <button class="close-modal">&times</button>
     <h3 class="project-title">${projectInfo[id].name}</h3>
     <ul class="card-tech-modal">
@@ -123,20 +119,20 @@ const displayModal = (id) => {
     <button class="btn-modal seeSource"><a href="${projectInfo[id].source}">See source</a></button>
     </div>
     <div class="next-prev-proj">
-        <button class="prev-btn">	&larr; Previous project</button>
-        <button class="prev-btn">Next Project 	&rarr;</button>
-      </div>`
-      
-    modalContainer.innerHTML = html;
-    }
-})
-// close modal
-const btnCloseModal = document.querySelector('.close-modal');
+        <button class="prev-btn">Previous project</button>
+        <button class="prev-btn">Next Project</button>
+      </div>`;
 
-btnCloseModal.addEventListener('click', (e) => {
-  e.preventDefault()
-modalContainer.style.display = 'none';
-})
+      modalContainer.innerHTML = html;
+    }
+  });
+  // close modal
+  const btnCloseModal = document.querySelector('.close-modal');
+
+  btnCloseModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalContainer.style.display = 'none';
+  });
 };
 
 // Display projects
@@ -159,14 +155,12 @@ projectInfo.forEach((work) => {
   containerProject.insertAdjacentHTML('afterbegin', html);
 });
 
-
 const btnSee = document.querySelectorAll('.btn-see-project');
-btnSee.forEach((btn) => btn.addEventListener('click', (e)=> {
-  const {id} = e.target;
+btnSee.forEach((btn) => btn.addEventListener('click', (e) => {
+  const { id } = e.target;
   console.log(id);
   displayModal(id);
 }));
-
 
 // --Form validation
 
@@ -182,7 +176,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-//-- Local Storage
+// -- Local Storage
 
 let localData = {
   name: '',

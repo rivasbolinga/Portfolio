@@ -117,8 +117,8 @@
     background-image: url('../assets/background-projects.png');
     background-repeat: no-repeat;
     background-size: 100%;
-   
   }
+
   .projects-cards {
     margin: 0;
     display: grid;
@@ -165,11 +165,11 @@
     color: #1a2236;
   }
 
-
   .project-wrapper-0 {
     grid-column: 5/12;
     grid-row: 1/5;
   }
+
   .project-picture-0 {
     height: 98%;
   }
@@ -190,7 +190,7 @@
   }
 
   .project-picture-2 {
-   height: 95%;
+    height: 95%;
     margin-top: 28px;
     width: 105%;
   }
@@ -199,10 +199,11 @@
     grid-column: 7/11;
     grid-row: 12/15;
   }
+
   .project-picture-3 {
-     margin-top: 14px;
-   }
- 
+    margin-top: 14px;
+  }
+
 
   .project-wrapper-4 {
     grid-column: 8/12;
@@ -514,10 +515,11 @@
   .card {
     width: 250px;
   }
+
   .projects-section {
     margin: 100px;
   }
- 
+
 
   .modal-container {
     max-width: 100%;
@@ -532,10 +534,11 @@
   .intro-container {
     margin-top: 100px;
   }
-  
+
   .projects-section {
     margin-top: 400px;
   }
+
   .about-resume {
     width: 60%;
   }
@@ -546,7 +549,7 @@
   }
 
   .project-picture-2 {
-   height: 104%;
+    height: 104%;
     width: 105%;
     margin: 0;
   }
@@ -565,18 +568,18 @@
     grid-column: 7/11;
     grid-row: 13/15;
   }
+
   .project-picture-3 {
-     margin-top: 0;
-   }
-
-
-@media only screen and (min-width: 1440px) {
-  .projects-cards {
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(15, 98px);
-    box-sizing: border-box;
+    margin-top: 0;
   }
-}
+
+  @media only screen and (min-width: 1440px) {
+    .projects-cards {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      grid-template-rows: repeat(15, 98px);
+      box-sizing: border-box;
+    }
+  }
 }
