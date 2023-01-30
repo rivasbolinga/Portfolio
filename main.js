@@ -6,7 +6,7 @@ const btnCloseMenu = document.querySelector('.btn-close');
 const modalContainer = document.querySelector('.modal-container');
 const sectionLink = document.querySelector('.link');
 const containerProject = document.querySelector('.projects-cards');
-
+const overlay = document.querySelector('.overlay');
 // Open and close MENU window
 
 const openMenu = function () {
@@ -39,13 +39,13 @@ const projectInfo = [
     id: 1,
     name: 'To Do List',
     description: 'To Do List is a simple application where you can list, remove, edit and mark as complete all the tasks that you have to do.',
-    image: './assets/todo.png',
+    image: './assets/todo1.png',
     technologies: [
       'HTML/CSS',
       'Webpack',
       'JavaScript'],
-    liveVersion: 'https://rivasbolinga.github.io/ToDoList/dist/',
-    source: 'https://github.com/rivasbolinga/ToDoList',
+    liveVersion: 'https://rivasbolinga.github.io/To-Do-App/dist/',
+    source: 'https://github.com/rivasbolinga/To-Do-App',
   },
   {
     id: 2,
@@ -101,8 +101,8 @@ const projectInfo = [
 const displayModal = (id) => {
   projectInfo.forEach((work) => {
     if ((Number(id)) === work.id) {
-      modalContainer.style.display = 'flex';
-      // document.getElementById(`${projectInfo[i].id}`).addEventListener('click', () => {
+     modalContainer.classList.add('active')
+     overlay.classList.add('active');
       let html = '';
       html += `
     <button class="close-modal">&times</button>
@@ -115,12 +115,18 @@ const displayModal = (id) => {
     <img class="project-image" src="${projectInfo[id].image}">
     <p class="project-description">${projectInfo[id].description}</p>
     <div class="btns-modal">
-    <button class="btn-modal seeLive"><a href="${projectInfo[id].liveVersion}">See live</a></button>
-    <button class="btn-modal seeSource"><a href="${projectInfo[id].source}">See source</a></button>
+    <button class="btn-modal seeLive"><a href="${projectInfo[id].liveVersion}">See live
+    <i class="fa-regular fa-share-from-square"></i>
+    </a></button>
+    <button class="btn-modal seeSource"><a href="${projectInfo[id].source}">See source        <i class="fa-brands fa-github"></i></a></button>
     </div>
     <div class="next-prev-proj">
-        <button class="prev-btn">Previous project</button>
-        <button class="prev-btn">Next Project</button>
+        <button class="prev-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+        Previous project</button>
+        <button class="prev-btn">Next Project
+        <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>`;
 
       modalContainer.innerHTML = html;
@@ -131,7 +137,8 @@ const displayModal = (id) => {
 
   btnCloseModal.addEventListener('click', (e) => {
     e.preventDefault();
-    modalContainer.style.display = 'none';
+    modalContainer.classList.remove('active')
+    overlay.classList.remove('active');
   });
 };
 
@@ -158,10 +165,59 @@ projectInfo.forEach((work) => {
 const btnSee = document.querySelectorAll('.btn-see-project');
 btnSee.forEach((btn) => btn.addEventListener('click', (e) => {
   const { id } = e.target;
-  console.log(id);
   displayModal(id);
 }));
+///Navbar 
 
+const navContainer = document.querySelector('.nav-links');
+const navLink = document.querySelector('.navbar-link');
+
+navContainer.addEventListener('click', function (e){
+  e.preventDefault();
+  if(e.target.classList.contains('nav-link')){
+    const id = e.target.getAttribute('href');
+   document.querySelector(id).scrollIntoView({behavior: "smooth"})
+  }
+});
+
+// fade over Navbar
+
+const nav = document.querySelector('.header-menu');
+
+const hoverNav = function (e){
+  if(e.target.classList.contains('nav-link')){
+    const link = e.target;
+    const siblings = link.closest('.header-menu').querySelectorAll('.nav-link');
+
+    siblings.forEach(el => {
+      if(el !== link) {
+        el.style.opacity = this;
+      }
+    })
+  }
+}
+
+nav.addEventListener('mouseover',hoverNav.bind(0.5));
+nav.addEventListener('mouseout', hoverNav.bind(1));
+
+//sticky header
+const navv = document.querySelector('.desk-header'); 
+const navHeight = nav.getBoundingClientRect().height;
+const header = document.querySelector('.introduction');
+
+const stickyNav = function(entries){
+  const [entry] = entries;
+  if(!entry.isIntersecting) navv.classList.add('sticky')
+  else navv.classList.remove('sticky')
+}
+
+const headerObserver = new IntersectionObserver ( stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`
+});
+
+headerObserver.observe(header);
 // --Form validation
 
 const errorMessage = document.querySelector('.error-message');

@@ -10,6 +10,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/mobile.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://kit.fontawesome.com/713945395b.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -39,24 +40,24 @@
       </nav>
 
   <!-- Desktop nav STARTS HERE-->
-    <header class="desk-header">
-      <nav class="header-menu">
-        <ul>
-          <li>
-            <a href="#intro-container">Hello</a>
-          </li>
-          <li>
-            <a href="#projects-section">Portfolio</a>
-          </li>
-          <li>
-            <a href="#about-section">About</a>
-          </li>
-          <li>
-            <a href="#form-section">Contact</a>
-          </li>
-      </nav>
-    </header>
-  <!-- END Desktop nav -->
+  <header class="desk-header">
+    <nav class="header-menu">
+      <ul class="nav-links">
+        <li>
+          <a class="nav-link" href="#intro-container">Hello</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#projects-section">Portfolio</a>
+        </li>
+        <li>
+          <a class="nav-link"href="#about-section">About</a>
+        </li>
+        <li>
+          <a class="nav-link"href="#form-section">Contact</a>
+        </li>
+    </nav>
+  </header>
+<!-- END Desktop nav -->
   
     <!-- Introduction -->
 
@@ -90,13 +91,11 @@
        </div>
    </section>
     <!--END Works section DESKTOP VERSION-->
-
-  <!-- Works Modal pop-up starts here -->
-  <section class="modal-container" id="myMOdal">
- 
-  </section>
-  <!-- Works Modal pop-up ends here -->
-
+ <!-- Works Modal pop-up starts here -->
+ <div class="modal-container" id="myMOdal">
+</div>
+<div class="overlay"></div>
+<!-- Works Modal pop-up ends here -->
   <!-- About me section -->
 
     <section class="about-me-section" id="about-section">
@@ -173,9 +172,7 @@
         <button class="btn-collaboration btn-submit">Start collaboration</button>
       </form>
     </section>
-
-         <!-- Foooter section -->
-
+  <!-- Foooter section -->
     <footer id="footer">
       <div class="get-my-resume">
         <p class="get-my-resume-text">Get my resume</p>
