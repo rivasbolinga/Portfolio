@@ -113,7 +113,7 @@
   /* Works section */
 
   .projects-section {
-    margin-top: 200px;
+    margin-top: 300px;
     background-image: url('../assets/background-projects.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -129,16 +129,19 @@
 
   #project-card-details {
     width: 100%;
+    min-height: 60%;
     background-color: #1a2236;
     color: white;
     font-family: 'Poppins', sans-serif;
     visibility: hidden;
     flex-direction: column;
-    transition: 1s 30s;
+    transition: 1s 3s;
+    display: flex;
+    justify-content: center;
   }
 
   #project-pic:hover ~ #project-card-details {
-    transform: translateY(-120px);
+    transform: translateY(-150px);
     visibility: visible;
     transition: 0.7s;
   }
@@ -146,7 +149,7 @@
   .project-name {
     margin: 0;
     padding: 10px 0 0 10px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
     line-height: 80%;
   }
@@ -157,17 +160,16 @@
     color: #1a2236;
     font-size: 10px;
     gap: 6px;
+    width: 30px;
   }
 
   .btn-see-project {
     width: 130px;
-    height: 30px;
     font-size: 12px;
     background-color: white;
     color: #1a2236;
     margin: 15px 0 10px 10px;
     padding: 5px;
-  
   }
 
   .project-wrapper-0 {
@@ -208,7 +210,6 @@
   .project-picture-3 {
     margin-top: 14px;
   }
-
 
   .project-wrapper-4 {
     grid-column: 8/12;
@@ -256,7 +257,7 @@
     background-color: black;
     opacity: 0.6;
   }
-  
+
   .overlay.active {
     display: block;
   }
@@ -285,10 +286,8 @@
     font-weight: 300;
     font-size: 15px;
     line-height: 80%;
-    margin-left: 20px;
-    gap: 3px;
+    margin-right: 10px;
     padding: 5px 10px 5px 10px;
-   
   }
 
   .card-tech-modal {
@@ -306,14 +305,6 @@
     justify-content: center;
   }
 
- .btn-modal  a {
-    text-decoration: none;
-    color: #1a2236;
-  }
-  .btn-modal  a:hover {
-    color: white;
-  }
-
   .btn-modal {
     width: 180px;
     margin-top: 10px;
@@ -324,7 +315,7 @@
   }
 
   .btn-modal:hover {
-    background-color: #1a2236;
+    border: 3px solid #1a2236;
     color: white;
   }
 
@@ -571,7 +562,6 @@
     margin: 100px;
   }
 
-
   .modal-container {
     max-width: 100%;
   }
@@ -607,8 +597,8 @@
 
   .desk-background-container {
     margin-top: 100px;
-    width: 600px;
-    height: 1100px;
+    width: 650px;
+    height: 1200px;
   }
 
   .cards {
@@ -632,9 +622,11 @@
       grid-template-rows: repeat(15, 98px);
       box-sizing: border-box;
     }
+
     .project-picture-1 {
       margin-top: 120px;
     }
+
     .project-picture-3 {
       margin-top: 8px;
     }

@@ -101,8 +101,8 @@ const projectInfo = [
 const displayModal = (id) => {
   projectInfo.forEach((work) => {
     if ((Number(id)) === work.id) {
-     modalContainer.classList.add('active')
-     overlay.classList.add('active');
+      modalContainer.classList.add('active');
+      overlay.classList.add('active');
       let html = '';
       html += `
     <button class="close-modal">&times</button>
@@ -137,7 +137,7 @@ const displayModal = (id) => {
 
   btnCloseModal.addEventListener('click', (e) => {
     e.preventDefault();
-    modalContainer.classList.remove('active')
+    modalContainer.classList.remove('active');
     overlay.classList.remove('active');
   });
 };
@@ -167,16 +167,15 @@ btnSee.forEach((btn) => btn.addEventListener('click', (e) => {
   const { id } = e.target;
   displayModal(id);
 }));
-///Navbar 
+/// Navbar
 
 const navContainer = document.querySelector('.nav-links');
-const navLink = document.querySelector('.navbar-link');
 
-navContainer.addEventListener('click', function (e){
+navContainer.addEventListener('click', (e) => {
   e.preventDefault();
-  if(e.target.classList.contains('nav-link')){
+  if (e.target.classList.contains('nav-link')) {
     const id = e.target.getAttribute('href');
-   document.querySelector(id).scrollIntoView({behavior: "smooth"})
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
 
@@ -184,37 +183,37 @@ navContainer.addEventListener('click', function (e){
 
 const nav = document.querySelector('.header-menu');
 
-const hoverNav = function (e){
-  if(e.target.classList.contains('nav-link')){
+const hoverNav = function (e) {
+  if (e.target.classList.contains('nav-link')) {
     const link = e.target;
     const siblings = link.closest('.header-menu').querySelectorAll('.nav-link');
 
-    siblings.forEach(el => {
-      if(el !== link) {
+    siblings.forEach((el) => {
+      if (el !== link) {
         el.style.opacity = this;
       }
-    })
+    });
   }
-}
+};
 
-nav.addEventListener('mouseover',hoverNav.bind(0.5));
+nav.addEventListener('mouseover', hoverNav.bind(0.5));
 nav.addEventListener('mouseout', hoverNav.bind(1));
 
-//sticky header
-const navv = document.querySelector('.desk-header'); 
+// sticky header
+const navv = document.querySelector('.desk-header');
 const navHeight = nav.getBoundingClientRect().height;
 const header = document.querySelector('.introduction');
 
-const stickyNav = function(entries){
+const stickyNav = function (entries) {
   const [entry] = entries;
-  if(!entry.isIntersecting) navv.classList.add('sticky')
-  else navv.classList.remove('sticky')
-}
+  if (!entry.isIntersecting) navv.classList.add('sticky');
+  else navv.classList.remove('sticky');
+};
 
-const headerObserver = new IntersectionObserver ( stickyNav, {
+const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMargin: `-${navHeight}px`
+  rootMargin: `-${navHeight}px`,
 });
 
 headerObserver.observe(header);
