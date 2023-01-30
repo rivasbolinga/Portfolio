@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-
+<img width="1440" alt="Screenshot 2023-01-24 at 16 46 30" src="https://user-images.githubusercontent.com/103900838/214340506-72e28972-0b69-4d77-83a8-3c84f217c52d.png">
 
 <!-- TABLE OF CONTENTS -->
 
@@ -112,10 +112,10 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-
- 1.Clone this repository to your desired folder:
- 2.run: git clone git@github.com:rivasbolinga/Portfolio.git
- 2.Open the file in your code editor
+<br/>
+ 1.Clone this repository to your desired folder:<br/>
+ 2.run: git clone git@github.com:rivasbolinga/Portfolio.git<br/>
+ 2.Open the file in your code editor<br/>
 <!--
 Example commands:
 
@@ -198,21 +198,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Cooming soon;
-
 - [ ] **[Smooth scroll down]**
 - [ ] **[More JS implementations]**
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,9 +208,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+Thank you for visiting my profile, if you like this project, you can show your support by giving me a nice :star:️ 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,25 +218,12 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank to my coding partnes for all the help and support: -Belay Birhanu Gibina -José Fernández-Caminero -Carlos Philippe -Ayomipo Majekodunmi
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+I would like to thanks to my coding partners for helping me in the development of this project:<br/> <br/>-Belay Birhanu Gibina<br/> -José Fernández-Caminero <br/> -Carlos Philippe
+<br/> -Ayomipo Majekodunmi
 
-<!-- FAQ (optional)
 
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -257,7 +232,5 @@ I would like to thank to my coding partnes for all the help and support: -Belay 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/rivasbolinga/Portfolio/blob/main/MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
