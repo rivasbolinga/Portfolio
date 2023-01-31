@@ -41,6 +41,11 @@
     color: #1a2236;
   }
 
+  .btn-modal a {
+    text-decoration: none;
+    color: #1a2236;
+  }
+
   /* Transition nav */
 
   .header-menu a:hover {
@@ -113,7 +118,7 @@
   /* Works section */
 
   .projects-section {
-    margin-top: 200px;
+    margin-top: 300px;
     background-image: url('../assets/background-projects.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -129,40 +134,47 @@
 
   #project-card-details {
     width: 100%;
+    min-height: 60%;
     background-color: #1a2236;
     color: white;
     font-family: 'Poppins', sans-serif;
     visibility: hidden;
     flex-direction: column;
-    transition: 1s 1.5s;
+    transition: 1s 3s;
+    display: flex;
+    justify-content: center;
   }
 
   #project-pic:hover ~ #project-card-details {
-    transform: translateY(-120px);
+    transform: translateY(-150px);
     visibility: visible;
-    transition: 1s;
+    transition: 0.7s;
   }
 
   .project-name {
     margin: 0;
     padding: 10px 0 0 10px;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 800;
     line-height: 80%;
   }
 
   .card-tech {
+    margin: 15px 0 0 10px;
+    padding: 0;
     color: #1a2236;
-    padding: 10px 0 0 10px;
+    font-size: 10px;
     gap: 6px;
+    width: 30px;
   }
 
   .btn-see-project {
-    margin: 0 0 10px 10px;
-    padding: 10px;
-    width: 200px;
+    width: 130px;
+    font-size: 12px;
     background-color: white;
     color: #1a2236;
+    margin: 15px 0 10px 10px;
+    padding: 5px;
   }
 
   .project-wrapper-0 {
@@ -204,7 +216,6 @@
     margin-top: 14px;
   }
 
-
   .project-wrapper-4 {
     grid-column: 8/12;
     grid-row: 7/10;
@@ -215,54 +226,83 @@
     grid-row: 5/7;
   }
 
-
   /* Modal POPUP */
 
   .modal-container {
-    border: 40px solid #1a2236;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: white;
     position: fixed;
+    z-index: 1;
     top: 50%;
-    transform: translate(0%, -50%);
-    visibility: visible;
-    box-sizing: border-box;
-    max-height: 100%;
+    left: 50%;
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    border: 20px solid #c79081;
+    text-align: center;
+    font-size: 20px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+  }
+
+  .modal-container.active {
+    display: flex;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+  .overlay.active {
+    display: block;
   }
 
   .project-title {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 80%;
     margin-left: 20px;
   }
 
   .project-description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 27px;
     color: #1a2236;
     padding-left: 120px;
     padding-right: 120px;
-    width: 700px;
+    width: 60%;
     align-self: center;
   }
 
   .card-tech-modal li {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 80%;
-    margin-left: 20px;
-    gap: 10px;
-    padding: 10px 15px 10px 15px;
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .card-tech-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .btns-modal {
-    font-size: 70px;
+    text-decoration: none;
+    font-size: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -270,21 +310,22 @@
   }
 
   .btn-modal {
-    margin-top: 100px;
-    margin-right: 20px;
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 60px;
     cursor: pointer;
     text-align: left;
     padding-left: 25px;
   }
 
   .btn-modal:hover {
-    background-color: #1a2236;
+    border: 3px solid #1a2236;
     color: white;
   }
 
   .next-prev-proj {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -301,6 +342,11 @@
     border: none;
     background: none;
     cursor: pointer;
+  }
+
+  .project-image {
+    width: 70%;
+    height: auto;
   }
 
   /* About me section */
@@ -520,7 +566,6 @@
     margin: 100px;
   }
 
-
   .modal-container {
     max-width: 100%;
   }
@@ -556,8 +601,8 @@
 
   .desk-background-container {
     margin-top: 100px;
-    width: 600px;
-    height: 1100px;
+    width: 650px;
+    height: 1200px;
   }
 
   .cards {
@@ -580,6 +625,14 @@
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: repeat(15, 98px);
       box-sizing: border-box;
+    }
+
+    .project-picture-1 {
+      margin-top: 120px;
+    }
+
+    .project-picture-3 {
+      margin-top: 8px;
     }
   }
 }
