@@ -41,6 +41,11 @@
     color: #1a2236;
   }
 
+  .btn-modal a {
+    text-decoration: none;
+    color: #1a2236;
+  }
+
   /* Transition nav */
 
   .header-menu a:hover {
