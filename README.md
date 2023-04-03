@@ -80,7 +80,7 @@ git clone git@github.com:rivasbolinga/Portfolio.git
 ```
 3. To access cloned directory run:
 ```
-cd JS.capstone-project
+cd Portfolio
 ```
 3. Open it with the live server
 
@@ -97,16 +97,6 @@ Start the server
 npm run start
 ```
 
-### Run tests <a name="run-tests"></a>
-
-To run Stylelint and ESLint tests, run the following commands respectively:
-
-```
-npx stylelint "**/*.{css,scss}"
-```
-
-```
-npx eslint .
 
 <!-- AUTHORS -->
 
