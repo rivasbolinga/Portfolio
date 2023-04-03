@@ -101,7 +101,7 @@ const projectInfo = [
 //  Create modal
 const displayModal = (id) => {
   // Find the current project
-  const currentProject = projectInfo.find(project => project.id === Number(id));
+  const currentProject = projectInfo.find((project) => project.id === Number(id));
 
   // Find the index of the current project in the projectInfo array
   const currentIndex = projectInfo.indexOf(currentProject);
@@ -128,7 +128,7 @@ const displayModal = (id) => {
       <button class="btn-modal seeSource"><a href="${currentProject.source}">See source        <i class="fa-brands fa-github"></i></a></button>
     </div>
     <div class="next-prev-proj">
-  `
+  `;
 
   // Add the "Previous Project" button if there is a previous project
   if (previousProject) {
@@ -148,18 +148,17 @@ const displayModal = (id) => {
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     `;
-     html += `
+    html += `
     </div>
-  `
-  
+  `;
 
-  // Add the modal HTML to the page
-  modalContainer.innerHTML = html;
+    // Add the modal HTML to the page
+    modalContainer.innerHTML = html;
 
-  // Show the modal and overlay
-  modalContainer.classList.add('active');
-  overlay.classList.add('active');
-}
+    // Show the modal and overlay
+    modalContainer.classList.add('active');
+    overlay.classList.add('active');
+  }
 
   // close modal
   const btnCloseModal = document.querySelector('.close-modal');
@@ -209,10 +208,10 @@ navContainer.addEventListener('click', (e) => {
 });
 // btn collaboration to form section
 
-btnCollaboration.addEventListener('click', (e)=> {
+btnCollaboration.addEventListener('click', (e) => {
   const id = e.target.getAttribute('href');
-  document.querySelector(id).scrollIntoView({behavior:'smooth'});
-})
+  document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+});
 // fade over Navbar
 
 const nav = document.querySelector('.header-menu');

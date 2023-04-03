@@ -3,17 +3,19 @@
 
 @media only screen and (min-width: 768px) {
   /* Header */
-body  {
-overflow-x: hidden;
-}
+  body {
+    overflow-x: hidden;
+  }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-a:hover {
-  color: #1a2236;
-}
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: #1a2236;
+  }
+
   .toolbar {
     display: none;
   }
@@ -391,6 +393,7 @@ a:hover {
     width: 250px;
     height: 70px;
   }
+
   .fa-circle-down {
     margin-left: 4px;
     font-size: 20px;
@@ -542,15 +545,14 @@ a:hover {
     margin: 0;
   }
 
+  .logo {
+    color: white;
+    font-size: 20px;
+  }
 
   .logo:hover {
     transform: scale(1.8);
     cursor: pointer;
-  }
-
-  .logo {
-    color: white;
-    font-size: 20px;
   }
 }
 
