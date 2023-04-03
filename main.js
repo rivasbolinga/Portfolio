@@ -100,39 +100,67 @@ const projectInfo = [
 
 //  Create modal
 const displayModal = (id) => {
-  projectInfo.forEach((work) => {
-    if ((Number(id)) === work.id) {
-      modalContainer.classList.add('active');
-      overlay.classList.add('active');
-      let html = '';
-      html += `
+  // Find the current project
+  const currentProject = projectInfo.find(project => project.id === Number(id));
+
+  // Find the index of the current project in the projectInfo array
+  const currentIndex = projectInfo.indexOf(currentProject);
+
+  // Find the previous and next projects
+  const previousProject = projectInfo[currentIndex - 1];
+  const nextProject = projectInfo[currentIndex + 1];
+
+  // Generate HTML for the modal
+  let html = `
     <button class="close-modal">&times</button>
-    <h3 class="project-title">${projectInfo[id].name}</h3>
+    <h3 class="project-title">${currentProject.name}</h3>
     <ul class="card-tech-modal">
-      <li>${projectInfo[id].technologies[0]}</li>
-      <li>${projectInfo[id].technologies[1]}</li>
-      <li>${projectInfo[id].technologies[2]}</li>
+      <li>${currentProject.technologies[0]}</li>
+      <li>${currentProject.technologies[1]}</li>
+      <li>${currentProject.technologies[2]}</li>
     </ul>
-    <img class="project-image" src="${projectInfo[id].image}">
-    <p class="project-description">${projectInfo[id].description}</p>
+    <img class="project-image" src="${currentProject.image}">
+    <p class="project-description">${currentProject.description}</p>
     <div class="btns-modal">
-    <button class="btn-modal seeLive"><a href="${projectInfo[id].liveVersion}">See live
-    <i class="fa-regular fa-share-from-square"></i>
-    </a></button>
-    <button class="btn-modal seeSource"><a href="${projectInfo[id].source}">See source        <i class="fa-brands fa-github"></i></a></button>
+      <button class="btn-modal seeLive"><a href="${currentProject.liveVersion}">See live
+      <i class="fa-regular fa-share-from-square"></i>
+      </a></button>
+      <button class="btn-modal seeSource"><a href="${currentProject.source}">See source        <i class="fa-brands fa-github"></i></a></button>
     </div>
     <div class="next-prev-proj">
-        <button class="prev-btn">
-        <i class="fa-solid fa-arrow-left"></i>
-        Previous project</button>
-        <button class="prev-btn">Next Project
-        <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>`;
+  `
 
-      modalContainer.innerHTML = html;
-    }
-  });
+  // Add the "Previous Project" button if there is a previous project
+  if (previousProject) {
+    html += `
+      <button class="prev-btn" onclick="displayModal(${previousProject.id})">
+        <i class="fa-solid fa-arrow-left"></i>
+        Previous project
+      </button>
+    `;
+  }
+
+  // Add the "Next Project" button if there is a next project
+  if (nextProject) {
+    html += `
+      <button class="next-btn prev-btn" onclick="displayModal(${nextProject.id})">
+        Next project
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    `;
+     html += `
+    </div>
+  `
+  
+
+  // Add the modal HTML to the page
+  modalContainer.innerHTML = html;
+
+  // Show the modal and overlay
+  modalContainer.classList.add('active');
+  overlay.classList.add('active');
+}
+
   // close modal
   const btnCloseModal = document.querySelector('.close-modal');
 
