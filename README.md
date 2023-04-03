@@ -58,7 +58,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Here you can see the live demo of my project:
 
 - [Live Demo Link](https://rivasbolinga.github.io/Portfolio)
 
