@@ -28,11 +28,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio Andrea Rivas Palacios] <a name="about-project"></a>
+# 📖 Portfolio Andrea Rivas Palacios <a name="about-project"></a>
 
-> This is my first portfolio at Microverse following a Figma Template. 
 
-**[My portfolio]** is a way to show the most important projects I have done, highlight my skills, frameworks and languages that I master.
+**My portfolio** is a way to show the most important projects I have done, highlight my skills, frameworks and languages that I master.This is my first portfolio at Microverse following a Figma Template. 
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
