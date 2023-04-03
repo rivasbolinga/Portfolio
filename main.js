@@ -7,6 +7,7 @@ const modalContainer = document.querySelector('.modal-container');
 const sectionLink = document.querySelector('.link');
 const containerProject = document.querySelector('.projects-cards');
 const overlay = document.querySelector('.overlay');
+const btnCollaboration = document.querySelector('.btn-collaboration');
 // Open and close MENU window
 
 const openMenu = function () {
@@ -178,7 +179,12 @@ navContainer.addEventListener('click', (e) => {
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
+// btn collaboration to form section
 
+btnCollaboration.addEventListener('click', (e)=> {
+  const id = e.target.getAttribute('href');
+  document.querySelector(id).scrollIntoView({behavior:'smooth'});
+})
 // fade over Navbar
 
 const nav = document.querySelector('.header-menu');
