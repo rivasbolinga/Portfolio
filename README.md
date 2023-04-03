@@ -76,10 +76,10 @@ In order to run this project you need:
 
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/hienphan0111/JS-capstone-project.git
+git clone git@github.com:rivasbolinga/Portfolio.git
 ```
 3. To access cloned directory run:
-```bash
+```
 cd JS.capstone-project
 ```
 3. Open it with the live server
