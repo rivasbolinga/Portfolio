@@ -62,82 +62,51 @@
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
-
-
-To get a local copy up and running, follow these steps.
-
 ### Prerequisites
 
 In order to run this project you need:
- -A PC running any operating system like Windows, Linux, or MacOS
- -An Internet connection
- -A browser like Google Chrome or Mozilla Firefox
- -Git installed
- -Knowledge of some basic Git commands
-<!--
-Example command:
 
-```sh
- gem install rails
-```
- -->
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Webpack installed
+- [ ] Knowledge of some basic Git commands
 
 ### Setup
 
-Clone this repository to your desired folder:
-<br/>
- 1.Clone this repository to your desired folder:<br/>
- 2.run: git clone git@github.com:rivasbolinga/Portfolio.git<br/>
- 2.Open the file in your code editor<br/>
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+1. Download the **Zip** file or clone the repo with:
+```bash
+git clone https://github.com/hienphan0111/JS-capstone-project.git
 ```
---->
-
-
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
+3. To access cloned directory run:
+```bash
+cd JS.capstone-project
 ```
---->
+3. Open it with the live server
 
-
-<!--
-Example command:
-
-```sh
-  rails server
+### Install
 ```
--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
+npm install
 ```
---->
 
-### Deployment
+### Usage
 
-You can deploy this project using: GitHub Pages.
-
-<!--
-Example:
-
-```sh
+Start the server
 
 ```
- -->
+npm run start
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Run tests <a name="run-tests"></a>
+
+To run Stylelint and ESLint tests, run the following commands respectively:
+
+```
+npx stylelint "**/*.{css,scss}"
+```
+
+```
+npx eslint .
 
 <!-- AUTHORS -->
 
